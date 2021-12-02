@@ -7,7 +7,6 @@ def Chal1_1():
         if int(depth[x]) > int(depth[x - 1]):
             cpt += 1
     return cpt
-
 def Chal1_2():
     depth = []
     cpt = 0
