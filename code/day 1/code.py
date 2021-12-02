@@ -1,7 +1,7 @@
 def Chal1_1():
     depth = []
     cpt = 0
-    with open('.\secondaryFiles\chall1_1.txt') as f:
+    with open('input.txt') as f:
         depth = f.readlines()
     for x in range(1, len(depth)):
         if int(depth[x]) > int(depth[x - 1]):
@@ -10,7 +10,7 @@ def Chal1_1():
 def Chal1_2():
     depth = []
     cpt = 0
-    with open('.\secondaryFiles\chall1_1.txt') as f:
+    with open('input.txt') as f:
         depth = f.readlines()
         depth = [int(x) for x in depth]
     for x in range(len(depth) - 3):
@@ -18,5 +18,4 @@ def Chal1_2():
             cpt += 1
     return cpt
 
-
-print(Chal1_2())
+print(Chal1_1(), Chal1_2())
