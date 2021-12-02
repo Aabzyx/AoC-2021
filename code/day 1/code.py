@@ -7,6 +7,7 @@ def Chal1_1():
         if int(depth[x]) > int(depth[x - 1]):
             cpt += 1
     return cpt
+
 def Chal1_2():
     depth = []
     cpt = 0
@@ -17,5 +18,6 @@ def Chal1_2():
         if sum(depth[x : x + 3]) < sum(depth[x + 1 : x + 4]):
             cpt += 1
     return cpt
+
 
 print(Chal1_1(), Chal1_2())

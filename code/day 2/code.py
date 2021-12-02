@@ -15,6 +15,7 @@ def Chal2_1():
         elif re.findall("down", l):
             depth += x
     return horizontalPos, depth, (horizontalPos * depth)
+
 def Chal2_2():
     lines = []
     horizontalPos = 0
@@ -32,6 +33,7 @@ def Chal2_2():
         elif re.findall("down", l):
             aim += x
     return horizontalPos, depth, aim, (horizontalPos * depth)
+
 
 print(Chal2_1())
 print(Chal2_2())
