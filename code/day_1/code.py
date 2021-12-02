@@ -1,3 +1,6 @@
+import os
+os.chdir('.\day_1')
+
 def Chal1_1():
     depth = []
     cpt = 0
@@ -19,5 +22,5 @@ def Chal1_2():
             cpt += 1
     return cpt
 
-
-print(Chal1_1(), Chal1_2())
+print(Chal1_1())
+print(Chal1_2())
